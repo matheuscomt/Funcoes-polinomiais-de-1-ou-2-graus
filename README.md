@@ -1,0 +1,1 @@
+# Funcoes-polinomiais-de-1-ou-2-graus
