@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Missão Matemática Espacial - Aprenda funções polinomiais de 1º e 2º graus em contextos diversos">
+    <meta name="author" content="Comandante Estudante">
+    <title>🚀 Missão Matemática | Funções Polinomiais no Espaço</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== ESTRELAS DE FUNDO (GERADAS VIA JS) ===== -->
+    <div id="starfield" aria-hidden="true"></div>
+
+    <!-- ===== CABEÇALHO / NAVEGAÇÃO ===== -->
+    <header class="main-header" id="topo">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <h1 class="logo-text">Missão <span class="highlight">Matemática</span></h1>
+            </div>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#missao1" class="nav-link">Missão 1</a></li>
+                    <li><a href="#missao2" class="nav-link">Missão 2</a></li>
+                    <li><a href="#missao3" class="nav-link">Missão 3</a></li>
+                    <li><a href="#missao4" class="nav-link">Missão 4</a></li>
+                    <li><a href="#missao5" class="nav-link">Missão 5</a></li>
+                    <li><a href="#desafio" class="nav-link">Desafio Final</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== SEÇÃO HERO / INÍCIO ===== -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <p class="hero-subtitle">CENTRO DE CONTROLE ESPACIAL</p>
+            <h2 class="hero-title">Bem-vindo, <span class="glow">Comandante</span>!</h2>
+            <p class="hero-description">
+                Sua missão é utilizar o poder das <strong>funções polinomiais de 1º e 2º graus</strong>
+                para resolver problemas reais em contextos diversos da exploração espacial.
+                Cada equação é uma chave para desbloquear novos horizontes no universo!
+            </p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Missões</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="10">0</span>
+                    <span class="stat-label">Modelos</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% Aprendizado</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#missao1" class="btn btn-primary">Iniciar Missão 🚀</a>
+                <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="planet-decoration" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== INTRODUÇÃO TEÓRICA ===== -->
+    <section class="theory-section" id="teoria">
+        <div class="container">
+            <h2 class="section-title">📚 Briefing Teórico</h2>
+            <p class="section-subtitle">Antes de decolar, conheça suas ferramentas matemáticas</p>
+
+            <div class="theory-grid">
+                <article class="theory-card">
+                    <div class="theory-icon">📈</div>
+                    <h3>Função do 1º Grau</h3>
+                    <p class="formula">f(x) = ax + b</p>
+                    <p>
+                        Também chamada de <strong>função afim</strong>, representa relações de
+                        proporcionalidade com taxa constante. Seu gráfico é sempre uma
+                        <em>reta</em>. O coeficiente <strong>a</strong> é a inclinação e
+                        <strong>b</strong> é o ponto onde a reta corta o eixo y.
+                    </p>
+                    <ul class="theory-list">
+                        <li><strong>Zero da função:</strong> x = -b/a</li>
+                        <li><strong>Crescente:</strong> quando a &gt; 0</li>
+                        <li><strong>Decrescente:</strong> quando a &lt; 0</li>
+                    </ul>
+                </article>
+
+                <article class="theory-card">
+                    <div class="theory-icon">🌠</div>
+                    <h3>Função do 2º Grau</h3>
+                    <p class="formula">f(x) = ax² + bx + c</p>
+                    <p>
+                        Conhecida como <strong>função quadrática</strong>, modela fenômenos
+                        com aceleração. Seu gráfico é uma <em>parábola</em>. O sinal de
+                        <strong>a</strong> determina a concavidade e o <strong>Δ</strong>
+                        (delta) indica quantas raízes existem.
+                    </p>
+                    <ul class="theory-list">
+                        <li><strong>Delta:</strong> Δ = b² - 4ac</li>
+                        <li><strong>Vértice Xv:</strong> -b / (2a)</li>
+                        <li><strong>Vértice Yv:</strong> -Δ / (4a)</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSÃO 1: LANÇAMENTO DO FOGUETE ===== -->
+    <section class="mission-section" id="missao1">
+        <div class="container">
+            <div class="mission-header">
+                <span class="mission-badge">Missão 01</span>
+                <h2 class="mission-title">🚀 Lançamento do Foguete</h2>
+                <p class="mission-context">
+                    Um foguete é lançado verticalmente. Sua altura em metros, após t segundos,
+                    é descrita pela função do 2º grau: <strong>h(t) = -5t² + 40t + 20</strong>.
+                </p>
+            </div>
+
+            <div class="mission-content">
+                <div class="mission-info">
+                    <h3>📋 Contexto</h3>
+                    <p>
+                        O foguete parte de uma plataforma a 20m do solo, com velocidade inicial
+                        de 40 m/s. A gravidade reduz sua velocidade em 10 m/s a cada segundo
+                        (por isso o termo -5t², que vem de -g/2 · t²).
+                    </p>
+
+                    <h3>🎯 Desafios</h3>
+                    <ol class="challenge-list">
+                        <li>Qual a altura máxima atingida?</li>
+                        <li>Em que instante o foguete atinge essa altura?</li>
+                        <li>Quando o foguete retorna ao solo?</li>
+                        <li>Qual a altura após 3 segundos?</li>
+                    </ol>
+                </div>
+
+                <div class="mission-calculator">
+                    <h3>🧮 Simulador Interativo</h3>
+                    <form class="calc-form" id="formMissao1">
+                        <div class="form-group">
+                            <label for="m1-a">Coeficiente a (t²):</label>
+                            <input type="number" id="m1-a" value="-5" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m1-b">Coeficiente b (t):</label>
+                            <input type="number" id="m1-b" value="40" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m1-c">Coeficiente c (constante):</label>
+                            <input type="number" id="m1-c" value="20" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m1-t">Instante t (segundos):</label>
+                            <input type="number" id="m1-t" value="3" step="0.1" min="0">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calcular 🚀</button>
+                    </form>
+
+                    <div class="calc-results" id="resultados1">
+                        <h4>📊 Resultados</h4>
+                        <div class="result-item">
+                            <span class="result-label">Função:</span>
+                            <span class="result-value" id="r1-funcao">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Delta (Δ):</span>
+                            <span class="result-value" id="r1-delta">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Raízes (t₁, t₂):</span>
+                            <span class="result-value" id="r1-raizes">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Vértice (tv, hv):</span>
+                            <span class="result-value" id="r1-vertice">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Altura em t:</span>
+                            <span class="result-value" id="r1-altura">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Concavidade:</span>
+                            <span class="result-value" id="r1-concavidade">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-graph">
+                <h3>📉 Gráfico da Função</h3>
+                <canvas id="canvas1" width="700" height="400"></canvas>
+                <div class="graph-legend">
+                    <span class="legend-item"><span class="legend-color" style="background:#00d9ff"></span>Parábola h(t)</span>
+                    <span class="legend-item"><span class="legend-color" style="background:#ff00aa"></span>Vértice</span>
+                    <span class="legend-item"><span class="legend-color" style="background:#ffcc00"></span>Raízes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSÃO 2: CONSUMO DE COMBUSTÍVEL ===== -->
+    <section class="mission-section alt" id="missao2">
+        <div class="container">
+            <div class="mission-header">
+                <span class="mission-badge">Missão 02</span>
+                <h2 class="mission-title">⛽ Consumo de Combustível</h2>
+                <p class="mission-context">
+                    A nave possui 1000 litros de combustível e consome 50 litros por hora.
+                    O volume restante é dado por: <strong>C(t) = -50t + 1000</strong>.
+                </p>
+            </div>
+
+            <div class="mission-content">
+                <div class="mission-info">
+                    <h3>📋 Contexto</h3>
+                    <p>
+                        Modelos lineares (1º grau) são essenciais para prever recursos em
+                        missões espaciais. O consumo constante permite saber exatamente quando
+                        o combustível acabará, garantindo o retorno seguro da tripulação.
+                    </p>
+
+                    <h3>🎯 Desafios</h3>
+                    <ol class="challenge-list">
+                        <li>Quanto combustível resta após 8 horas?</li>
+                        <li>Em quantas horas o combustível acaba?</li>
+                        <li>Qual a taxa de consumo?</li>
+                        <li>Qual o volume inicial?</li>
+                    </ol>
+                </div>
+
+                <div class="mission-calculator">
+                    <h3>🧮 Simulador Interativo</h3>
+                    <form class="calc-form" id="formMissao2">
+                        <div class="form-group">
+                            <label for="m2-a">Taxa de consumo (a):</label>
+                            <input type="number" id="m2-a" value="-50" step="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m2-b">Volume inicial (b):</label>
+                            <input type="number" id="m2-b" value="1000" step="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m2-t">Tempo t (horas):</label>
+                            <input type="number" id="m2-t" value="8" step="0.1" min="0">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calcular ⛽</button>
+                    </form>
+
+                    <div class="calc-results" id="resultados2">
+                        <h4>📊 Resultados</h4>
+                        <div class="result-item">
+                            <span class="result-label">Função:</span>
+                            <span class="result-value" id="r2-funcao">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Volume em t:</span>
+                            <span class="result-value" id="r2-volume">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Tempo até esvaziar:</span>
+                            <span class="result-value" id="r2-zero">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Tipo de função:</span>
+                            <span class="result-value" id="r2-tipo">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-graph">
+                <h3>📉 Gráfico da Função</h3>
+                <canvas id="canvas2" width="700" height="400"></canvas>
+                <div class="graph-legend">
+                    <span class="legend-item"><span class="legend-color" style="background:#00ff88"></span>Reta C(t)</span>
+                    <span class="legend-item"><span class="legend-color" style="background:#ffcc00"></span>Ponto zero</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSÃO 3: TRAJETÓRIA DO ASTEROIDE ===== -->
+    <section class="mission-section" id="missao3">
+        <div class="container">
+            <div class="mission-header">
+                <span class="mission-badge">Missão 03</span>
+                <h2 class="mission-title">☄️ Trajetória do Asteroide</h2>
+                <p class="mission-context">
+                    Um asteroide segue a trajetória descrita por: <strong>y = -0,5x² + 4x + 10</strong>,
+                    onde x e y são medidos em unidades astronômicas.
+                </p>
+            </div>
+
+            <div class="mission-content">
+                <div class="mission-info">
+                    <h3>📋 Contexto</h3>
+                    <p>
+                        Detectamos um asteroide em rota de possível colisão. Precisamos calcular
+                        sua altura máxima e os pontos onde cruza o eixo x (altitude zero) para
+                        decidir se devemos desviá-lo com um míssil.
+                    </p>
+
+                    <h3>🎯 Desafios</h3>
+                    <ol class="challenge-list">
+                        <li>Qual a altura máxima do asteroide?</li>
+                        <li>Em quais pontos ele cruza a altitude zero?</li>
+                        <li>A trajetória passa pelo ponto (4, 18)?</li>
+                        <li>Qual a concavidade da trajetória?</li>
+                    </ol>
+                </div>
+
+                <div class="mission-calculator">
+                    <h3>🧮 Simulador Interativo</h3>
+                    <form class="calc-form" id="formMissao3">
+                        <div class="form-group">
+                            <label for="m3-a">Coeficiente a:</label>
+                            <input type="number" id="m3-a" value="-0.5" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m3-b">Coeficiente b:</label>
+                            <input type="number" id="m3-b" value="4" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m3-c">Coeficiente c:</label>
+                            <input type="number" id="m3-c" value="10" step="0.1">
+                        </div>
+                        <div class="form-group">
+                            <label for="m3-x">Valor de x:</label>
+                            <input type="number" id="m3-x" value="4" step="0.1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Analisar ☄️</button>
+                    </form>
+
+                    <div class="calc-results" id="resultados3">
+                        <h4>📊 Resultados</h4>
+                        <div class="result-item">
+                            <span class="result-label">Função:</span>
+                            <span class="result-value" id="r3-funcao">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Δ:</span>
+                            <span class="result-value" id="r3-delta">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Raízes:</span>
+                            <span class="result-value" id="r3-raizes">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Vértice:</span>
+                            <span class="result-value" id="r3-vertice">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">y para x dado:</span>
+                            <span class="result-value" id="r3-y">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-graph">
+                <h3>📉 Gráfico da Trajetória</h3>
+                <canvas id="canvas3" width="700" height="400"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSÃO 4: DISTÂNCIA DA SONDA ===== -->
+    <section class="mission-section alt" id="missao4">
+        <div class="container">
+            <div class="mission-header">
+                <span class="mission-badge">Missão 04</span>
+                <h2 class="mission-title">🛰️ Distância da Sonda</h2>
+                <p class="mission-context">
+                    Uma sonda viaja a velocidade constante de 20.000 km/h. Sua distância à Terra
+                    é dada por: <strong>d(t) = 20000t + 500</strong> (km).
+                </p>
+            </div>
+
+            <div class="mission-content">
+                <div class="mission-info">
+                    <h3>📋 Contexto</h3>
+                    <p>
+                        A sonda já está a 500 km da Terra quando iniciamos a contagem.
+                        Modelos lineares permitem prever sua posição a qualquer instante,
+                        essencial para comunicação e manobras.
+                    </p>
+
+                    <h3>🎯 Desafios</h3>
+                    <ol class="challenge-list">
+                        <li>Qual a distância após 10 horas?</li>
+                        <li>Quando a sonda estará a 200.500 km?</li>
+                        <li>Qual a velocidade da sonda?</li>
+                        <li>Qual a distância inicial?</li>
+                    </ol>
+                </div>
+
+                <div class="mission-calculator">
+                    <h3>🧮 Simulador Interativo</h3>
+                    <form class="calc-form" id="formMissao4">
+                        <div class="form-group">
+                            <label for="m4-a">Velocidade (a) km/h:</label>
+                            <input type="number" id="m4-a" value="20000" step="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="m4-b">Distância inicial (b) km:</label>
+                            <input type="number" id="m4-b" value="500" step="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="m4-t">Tempo t (horas):</label>
+                            <input type="number" id="m4-t" value="10" step="0.1" min="0">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calcular 🛰️</button>
+                    </form>
+
+                    <div class="calc-results" id="resultados4">
+                        <h4>📊 Resultados</h4>
+                        <div class="result-item">
+                            <span class="result-label">Função:</span>
+                            <span class="result-value" id="r4-funcao">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Distância em t:</span>
+                            <span class="result-value" id="r4-distancia">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Tempo para D km:</span>
+                            <input type="number" id="r4-dAlvo" placeholder="Digite D" style="width:100px">
+                            <span class="result-value" id="r4-tempo">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-graph">
+                <h3>📉 Gráfico da Distância</h3>
+                <canvas id="canvas4" width="700" height="400"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MISSÃO 5: ÁREA DO CAMPO DE POUSO ===== -->
+    <section class="mission-section" id="missao5">
+        <div class="container">
+            <div class="mission-header">
+                <span class="mission-badge">Missão 05</span>
+                <h2 class="mission-title">🛸 Área do Campo de Pouso</h2>
+                <p class="mission-context">
+                    Um campo de pouso retangular tem perímetro de 200m. Se um lado mede x,
+                    a área é: <strong>A(x) = x(100 - x) = -x² + 100x</strong>.
+                </p>
+            </div>
+
+            <div class="mission-content">
+                <div class="mission-info">
+                    <h3>📋 Contexto</h3>
+                    <p>
+                        Precisamos maximizar a área do campo de pouso usando uma cerca de
+                        200m. Problemas de otimização são resolvidos encontrando o vértice
+                        da parábola (máximo quando a &lt; 0).
+                    </p>
+
+                    <h3>🎯 Desafios</h3>
+                    <ol class="challenge-list">
+                        <li>Qual valor de x maximiza a área?</li>
+                        <li>Qual a área máxima?</li>
+                        <li>Quais valores de x dão área zero?</li>
+                        <li>Qual a área quando x = 30?</li>
+                    </ol>
+                </div>
+
+                <div class="mission-calculator">
+                    <h3>🧮 Simulador Interativo</h3>
+                    <form class="calc-form" id="formMissao5">
+                        <div class="form-group">
+                            <label for="m5-perimetro">Perímetro (m):</label>
+                            <input type="number" id="m5-perimetro" value="200" step="10">
+                        </div>
+                        <div class="form-group">
+                            <label for="m5-x">Lado x (m):</label>
+                            <input type="number" id="m5-x" value="30" step="1" min="0">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Otimizar 🛸</button>
+                    </form>
+
+                    <div class="calc-results" id="resultados5">
+                        <h4>📊 Resultados</h4>
+                        <div class="result-item">
+                            <span class="result-label">Função:</span>
+                            <span class="result-value" id="r5-funcao">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">x ótimo:</span>
+                            <span class="result-value" id="r5-xopt">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Área máxima:</span>
+                            <span class="result-value" id="r5-amax">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Área em x:</span>
+                            <span class="result-value" id="r5-ax">-</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Raízes:</span>
+                            <span class="result-value" id="r5-raizes">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-graph">
+                <h3>📉 Gráfico da Área</h3>
+                <canvas id="canvas5" width="700" height="400"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DESAFIO FINAL / QUIZ ===== -->
+    <section class="quiz-section" id="desafio">
+        <div class="container">
+            <h2 class="section-title">🏆 Desafio Final</h2>
+            <p class="section-subtitle">Prove que você é um verdadeiro Comandante Matemático!</p>
+
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text">Questão <span id="currentQ">1</span> de <span id="totalQ">5</span></span>
+                </div>
+
+                <div class="quiz-question" id="quizQuestion">
+                    <h3 id="questionText">Carregando...</h3>
+                    <div class="quiz-options" id="quizOptions"></div>
+                </div>
+
+                <div class="quiz-feedback" id="quizFeedback"></div>
+
+                <div class="quiz-controls">
+                    <button class="btn btn-secondary" id="btnPrev" disabled>← Anterior</button>
+                    <button class="btn btn-primary" id="btnNext">Próxima →</button>
+                </div>
+            </div>
+
+            <div class="quiz-result hidden" id="quizResult">
+                <h3>🎉 Missão Cumprida!</h3>
+                <p class="final-score">Sua pontuação: <span id="scoreValue">0</span>/5</p>
+                <p id="scoreMessage"></p>
+                <button class="btn btn-primary" id="btnRestart">Tentar Novamente</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO SOBRE ===== -->
+    <section class="about-section" id="sobre">
+        <div class="container">
+            <h2 class="section-title">📖 Sobre o Projeto</h2>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h3>🎯 Objetivo</h3>
+                    <p>
+                        Este site foi desenvolvido como atividade da unidade
+                        <strong>"Algoritmos: criando uma aventura com HTML, CSS e JavaScript"</strong>,
+                        com o intuito de construir modelos empregando funções polinomiais de
+                        1º e 2º graus para resolver problemas em contextos diversos.
+                    </p>
+                </article>
+                <article class="about-card">
+                    <h3>🛠️ Tecnologias</h3>
+                    <ul>
+                        <li><strong>HTML5:</strong> estrutura semântica</li>
+                        <li><strong>CSS3:</strong> design responsivo com animações</li>
+                        <li><strong>JavaScript:</strong> cálculos, gráficos e interatividade</li>
+                        <li><strong>Canvas API:</strong> plotagem de funções</li>
+                    </ul>
+                </article>
+                <article class="about-card">
+                    <h3>📚 Conceitos Aplicados</h3>
+                    <ul>
+                        <li>Função do 1º grau: f(x) = ax + b</li>
+                        <li>Função do 2º grau: f(x) = ax² + bx + c</li>
+                        <li>Raízes, vértice, delta</li>
+                        <li>Análise de concavidade</li>
+                        <li>Problemas de otimização</li>
+                    </ul>
+                </article>
+                <article class="about-card">
+                    <h3>👨‍🚀 Autor</h3>
+                    <p>
+                        Desenvolvido por um estudante explorador do universo matemático.
+                        Atividade avaliativa - ATV GRV - SITE.
+                    </p>
+                    <p class="date-info">📅 Atualizado em: Setembro de 2026</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>🚀 Missão Matemática</h4>
+                <p>Explorando o universo através das funções polinomiais.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#teoria">Teoria</a></li>
+                    <li><a href="#desafio">Desafio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>📧 comando@missaomatematica.space</p>
+                <p>🌐 www.missaomatematica.space</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Missão Matemática - Todos os direitos reservados</p>
+            <p>Desenvolvido com 💙 e muitas equações</p>
+        </div>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
